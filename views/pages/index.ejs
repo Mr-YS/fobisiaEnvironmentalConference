@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>YOONSANG KIM-8BC FACUTLY PROJECT</title>
+	<link rel="shortcut icon" href="./favicon.ico">
+	<script src = "/jquery-1.11.3.min.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.1/css/materialize.min.css">
+	<script src="/materialize.js"></script>
+	<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" href="/style.css"/>
+	<script src="https://cdn.rawgit.com/showdownjs/showdown/1.3.0/dist/showdown.min.js"></script>
+</head>
+<body>
+	<div class="slider">
+		<ul class="slides">
+			<li>
+				<img src="./slide1.png">
+			</li>
+			<li>
+				<img src="./slide2.png">
+				<div class="caption center-align">
+					<h3>MATHS & COMPUTER FACULTY PROJECT</h3>
+					<h5 class="light grey-text">SPRITES</h5>
+				</div>
+			</li>
+			<li>
+				<img src="./slide3.png">
+				<div class="caption right-align">
+					<h3>SPRITES ON THE TABLE</h3>
+					<h5>-Bar Sprites</h5>
+				</div>
+			</li>
+			<li>
+				<img src="./slide4.png">
+				<div class="caption left-align">
+					<h3>MATHS & COMPUTER FACULTY PROJECT</h3>
+					<h5 class="light grey-text text-lighten-3">SPRITES</h5>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="white" style="height:100px;"></div>
+	<ul id="slide-out" class="side-nav">
+		<nav>
+			<div class="nav-wrapper blue lighten-1">
+				<form>
+					<div class="input-field">
+						<input id="search" type="search" required>
+						<label for="search"><i class="material-icons">search</i></label>
+						<i class="material-icons">close</i>
+					</div>
+				</form>
+			</div>
+		</nav>
+		<div class="" style="height:20px;background:white"></div>
+		<li class="no-padding">
+			<ul class="collapsible collapsible-accordion">
+				<li>
+					<a class="collapsible-header waves-effect waves-light" style="font-size:20px;"><b>Introduction</b><i class="mdi-navigation-arrow-drop-down right"></i></a>
+					<div class="collapsible-body">
+						<ul>
+							<li><a href="#introductaryParagraph" style="font-size:20px">Introduction</a></li>
+							<li><a href="#plan" style="font-size:20px">Plan</a></li>
+						</ul>
+					</div>
+				</li>
+			</ul>
+		</li>
+		<div class="" style="height:10px;background:white"></div>
+		<ul class="collapsible collapsible-accordion">
+			<li>
+				<a class="collapsible-header waves-effect waves-dark" style="font-size:20px;"><b>Part One</b><i class="mdi-navigation-arrow-drop-down right"></i></a>
+				<div class="collapsible-body">
+					<ul>
+						<li><a href="#bstt" style="font-size:20px">Bar Sprites</a></li>
+						<li><a href="#cstt" style="font-size:20px">Cross Sprites</a></li>
+						<li><a href="#rcstt" style="font-size:20px">ROT.Cross Sprites</a></li>
+						<li><a href="#poconc" style="font-size:20px">Small Conclusion</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div class="" style="height:10px;background:white"></div>
+		<ul class="collapsible collapsible-accordion">
+			<li>
+				<a class="collapsible-header waves-effect waves-dark" style="font-size:20px;"><b>Part Two</b><i class="mdi-navigation-arrow-drop-down right"></i></a>
+				<div class="collapsible-body">
+					<ul>
+						<li><a href="#parttwo" style="font-size:20px">Main Theme</a></li>
+						<li><a href="#xaxis" style="font-size:20px">Symmetry(x-axis)</a></li>
+						<li><a href="#yaxis" style="font-size:20px">Symmetry(y-axis)</a></li>
+						<li><a href="#org" style="font-size:20px">Symmetry(origin)</a></li>
+						<li><a href="#yx" style="font-size:20px">Symmetry(y=x)</a></li>
+						<li><a href="#xy" style="font-size:20px">Symmetry(y=-x)</a></li>
+						<li><a href="#similarity" style="font-size:20px">Similarity</a></li>
+						<li><a href="#90rot" style="font-size:20px">Rotation(90dgs)</a></li>
+						<li><a href="#loman" style="font-size:20px">Symmetry(y=ax)</a></li>
+						<li><a href="#rota" style="font-size:20px">Rotation(a)</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div class="" style="height:10px;background:white"></div>
+		<ul class="collapsible collapsible-accordion">
+			<li>
+				<a class="collapsible-header waves-effect waves-dark" style="font-size:20px;"><b>Conclusion</b><i class="mdi-navigation-arrow-drop-down right"></i></a>
+				<div class="collapsible-body">
+					<ul>
+						<li><a href="#conc" style="font-size:20px">Conclusion</a></li>
+						<li><a href="#eval" style="font-size:20px">Evaluation</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+		<div class="" style="height:10px;background:white"></div>
+		<ul class="collapsible collapsible-accordion">
+			<li>
+				<a class="collapsible-header waves-effect waves-dark" style="font-size:20px;"><b>Others</b><i class="mdi-navigation-arrow-drop-down right"></i></a>
+				<div class="collapsible-body">
+					<ul>
+						<li><a href="#webvideo" style="font-size:20px">Website Video</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</li>
+</ul>
+<a class="btn-floating btn-large blue lighten-1 waves-effect waves-light red button-collapse" data-activates="slide-out" style="bottom:3%;left:2%;position:fixed"><i class="material-icons">menu</i></a>
+<div class="fixed-action-btn horizontal" style="bottom:3%;right:2%;">
+	<a class="btn-floating btn-large blue lighten-1">
+		<i class="large material-icons">settings</i>
+	</a>
+	<ul>
+		<li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+		<li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+		<li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+		<li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+	</ul>
+</div>
+<div class="row">
+	<div class="col s8 offset-s1">
+		<h3 style="color:#00bcd4;"><blockquote style="border-left: 8px solid #00bcd4;">Recommended Specifications</blockquote></h3>
+		<ul class="collapsible popout z-depth-5" data-collapsible="accordion">
+			<li>
+				<div class="collapsible-header"><i class="material-icons">warning</i>Browsers</div>
+      	<div class="collapsible-body"><p>This website is not suitably designed to be run on 'opera', 'firefox', 'internet explorer'. 'google chrome' and 'chromium' are the most recommended to view this page. Please check the video at the bottom of the website, hence you can identify any wrongly presented materials.</p></div>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="material-icons">warning</i>OS system</div>
+      	<div class="collapsible-body"><p>There is no recommended OS system. Most recent Mac OS will be pefect to read the fonts, 'ubuntu','roboto',and'arial'.</p></div>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="material-icons">warning</i>Screen Size</div>
+      	<div class="collapsible-body"><p>Please maximize the tab to view proper design of slide show above.</p></div>
+			</li>
+			<li>
+				<div class="collapsible-header"><i class="material-icons">warning</i>Other System Preferenes</div>
+      	<div class="collapsible-body"><p>Do not view this web site in black and white mode or 4:3 screen sized mode.</p></div>
+			</li>
+		</ul>
+		<h2 id="introduction" class="section scrollspy">Introduction</h2>
+		<div id="introductaryParagraph" class="section scrollspy">
+			<p>	<blockquote>A sprite is a two-dimensional (2d) bitmap graphic object that represents a game character or an object in terms of computer graphics.
+				  As the definition above clearly suggests, the idea of sprite is mainly based on and related to computer science, however, through this project
+					the two similar but different subjects, computer science and mathematics will be emerged and combined together.
+					This website presents, a simple sprites that are drawn on the numbered/labeled table based on the starting point of the sprite,
+					pivot and explores the mathematical rules behind it. For the part one investigation, the relationship between the pivot(P),
+					the starting point of the sprite , and the total(T) that is the sum of the coloured numbers on the grid including the pivot will be discussed.
+					As an extension mathematical task, in other word, part two, the 9 different transformations of the sprites on the coordinates instead of grid
+					will be introduced and shows a change of total in before transformation and after.</blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h2 id="partone" class="section scrollspy">Part 1</h2>
+		<h4 id="bstt" class="section scrollspy">Bar Sprite</h4>
+		<div id="bst" class="section scrollspy">
+		</div>
+		<form action="#">
+ 			<h5><blockquote style="border-left:6px solid #ba68c8;">Rows</blockquote></h5>
+ 			<p class="range-field">
+ 				<input value="10" type="range" id="bstRangeRow" min="3" max="20" />
+ 			</p>
+ 			<h5><blockquote style="border-left:6px solid #ba68c8;">Columns</blockquote></h5>
+ 			<p class="range-field">
+ 				<input value="10" type="range" id="bstRangeCol" min="3" max="20" />
+ 			</p>
+ 		</form>
+		<div class="section scrollspy">
+			<p>	<blockquote> A bar sprite is the simplest and the most basic form of sprite. It is composed of 1 pivot and 2 other numbers in the shape of bar.
+			The relationsihp between 'pivot' and 'total' is<b>[p represents the value of pivot]</b> p + (p-10) + (p+10) = 3n in the case
+			of bar sprites on the 10 by 10 table(same gaps between numbers). However, the number 10 can be changed by changing the size(number of rows and column) of the table.
+			For example, total is p + (p-13) + (p+13) = 3n on the 13 by 13 table. Moreover, as you may notice, the total of bar sprites is possible to be
+			expressed in form of 3 * p.
+			</table> </blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4  id="cstt" class="section scrollspy">Cross Sprite</h4>
+		<div id="cst" class="section scrollspy">
+		</div>
+		<div class="section scrollspy">
+			<p>	<blockquote> A cross sprite is an upgraded version of bar sprites. As the table above presents, it has one pivot and 4 other numbers.
+			The relationsihp between 'pivot' and 'total' in the cross sprite is<b>[p represents the value of pivot]</b> p + (p-10) + (p+10) + (p+1) + (p-1)
+			which is equal to 5p on the 10 by 10 table with equal gap between each numbers on the table. However, the number 10 can be changed by changing the size(number of rows and column) of the table and number 1 can be
+			changed due to different gap between numbers on the table. For instance, when the table size is 11 by 11, and there are only even numbers written
+			on the table, the total will be expressed as<b>p + (p-2) + (p+2) + (p+11) + (p-11) = 5p</b>. The further features of the cross sprite will
+			be discussed in the 'small conclusion' session, at the end of part one.
+			</table> </blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4  id="rcstt" class="section scrollspy">Rotated-Cross Sprite</h4>
+		<div id="rcst" class="section scrollspy">
+		</div>
+		<div class="section scrollspy">
+			<p>	<blockquote> A rotated-cross sprite is the next form of cross sprite. This is formed by rotating the cross sprite in 45 degrees.
+				The relationship between 'pivot' and 'total' in this sprite is<b>[p represents the value of pivot]</b> p + (p-11) + (p-11) + (p-9) + (p+9) = 5p
+				on the 10 by 10 table with equal gap between each numbers. As same as cross sprites, constant terms are able to be different due to
+				different grid size and irregular gaps between numbers on the table. More features of the rotated-cross sprites will be mentioned in
+				'small conclusion' session.
+			</blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Small Conclusion</h4>
+		<div id="poconc" class="section scrollspy">
+			<p>	<blockquote style="border-left: 6px solid #ef5350;"> To conclude, the sprites that had been introduced in part one are the most basic sprites. The three of them had in common, that
+			was the relationship between 'pivot' and 'total' was able to be expressed in form of 'n * pivot'. The reason why this happens is because, all of
+			three sprites contain symmetrical patterns. Lets consider, a 'pivot' as an origin, in a bar sprite, pivot itself and two other numbers (p-10),(p+10) are
+			positioned in same distances from the pivot. This suggests that, when there are two numbers that are reflection of each others based on the origin 'pivot', in other word, origin symmetry,
+			because the sum of constant terms is equal to 0, <b>origin </b>symmetrical / reflective sprites always have the property that the relationship
+			between 'pivot' and 'total' can be expressed as n * pivot. Another similarity was the equations that explain their relationship between pivot and total / constant terms can be changed
+			due to the different grid size and irregular gap between numbers(except bar sprite).
+		</blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h2 id="parttwo" class="section scrollspy">Part 2</h2>
+		<div id="inex" class="section scrollspy">
+			<img src="./faculty1.png" >
+			<img src="./faculty2.png" >
+			<p>	<blockquote style="border-left: 6px solid #d81b60;"> In part one, we have looked at the basic relationship between 'pivot' and total. In part two, the main investigaion will be focused on
+			the conditions of total to maintain equal after the various transformaions on the coordinates. Before start, these image will help you and prove that
+			sprites are actually able to be expressed on the coordinates. ( Because the lower rows have bigger values than higher rows in the table, the coodrinates are reversed in this section.)</blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Symmetry (x-axis)</h4>
+		<div id="xaxis" class="section scrollspy">
+			<img src="./faculty3.png" >
+			<img src="./faculty4.png" >
+			<p>	<blockquote>BEFORE : Total=3p+(-2+2-2)-(2+2-2)w<br>
+			AFTER : Total=3p+(-2+2-2)-(2-2-2)w<br>
+			-> The sign(+/-) of coefficient value of w ( w represents the number of columns ) is inversed. <br>
+		  -> In other word, the sign(+/-) of y is inversed.<br>
+		  ++ If before the x-axis symmetry, the coefficient of w is 0, the value maintain as 0 after the process of symmetry / reflection.</blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Symmetry (y-axis)</h4>
+		<div id="yaxis" class="section scrollspy">
+			<img src="./faculty5_ySym.png" >
+			<img src="./faculty6_ySym.png" >
+			<p>	<blockquote>BEFORE : Total=3p+(-4+1-1)-(2+3-1)w<br>
+			AFTER : Total=3p+(-1+4+1)-(3+2-1)w<br>
+			-> The sign(+/-) of constant term is inversed. <br>
+		  -> In other word, the sign(+/-) of x is inversed. </blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Symmetry (origin)</h4>
+		<div id="org" class="section scrollspy">
+			<p>	<blockquote>BEFORE : Total=mp+X-Yw<br>
+			AFTER : Total=mp-X+Yw<br>
+			-> The sign(+/-) of both x , y are inversed <br>
+		  -> This is the mixture of x-axis symmetry and y-axis symmetry<br>
+		  -> If sprite was originally expressed as 'm*p', this form is kept after this process.<br>
+		  ++ mp+0-0w >> mp-0+0w </blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Symmetry (y=x)</h4>
+		<div id="yx" class="section scrollspy">
+			<img src="./faculty7_yx.png" >
+			<img src="./faculty7_yx2.png" >
+			<p>	<blockquote>BEFORE : Total=3p-2-1w ... : Total=mp+X-Yw<br>
+			AFTER : Total=3p+1+2w ... : Total=mp+X-Yw<br>
+			-> The position of X , Y are exchanged / swapped. <br>
+			++ if X-Yw = Y-Xw, total is equal after the process of y=x symmetry/reflection.</blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Symmetry (y=-x)</h4>
+		<div id="xy" class="section scrollspy">
+			<img src="./faculty8_yx.png" >
+			<img src="./faculty8_yx2.png" >
+			<p>	<blockquote>BEFORE : Total=mp+X-Yw<br>
+			AFTER : Total=mp-Y+Xw<br>
+			-> The position of X , Y is exchanged / swapped.<br>
+			-> The sign(+/-) of x , y is inversed.<br>
+			++ If X-Yw=-Y+Xw, total is kept after y=-x.</blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Similarity Transformation</h4>
+		<div id="similarity" class="section scrollspy">
+			<img src="./faculty9_1.png" >
+			<img src="./faculty9_2.png" >
+			<p>	<blockquote>BEFORE : Total=mp+X-Yw<br>
+			AFTER : Total=mp+kX-kYw<br>
+			-> The position of X , Y is exchanged / swapped.<br>
+			-> When the ratio is 1:k, the changed x , y are k*x , k*y.<br>
+			++ If sprite is able to be expressed in form of 'm*p', the total will maintain. </blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Rotation (90 degrees)</h4>
+		<div id="90rot" class="section scrollspy">
+			<img src="./faculty10.png" >
+			<p>	<blockquote>BEFORE : Total=mp+X-Yw<br>
+			AFTER : Total=mp-Y-Xw<br>
+			-> The position of X , Y is exchanged / swapped.<br>
+			-> Only sign(+/-) of y is inversed. <br>
+			++ If, X-Yw= -Y-Xw, the total will be kept same after the transformation. </blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Symmetry (y=ax)</h4>
+		<div id="loman" class="section scrollspy">
+			<img src="./faculty12.png" >
+			<p>	<blockquote>BEFORE : Total=mpr+X-Yw<br>
+			AFTER : Total=mp+(1/(a^2+1)){(1-a^2)*X+(2aY)}-(1/(a^2+1))(2aX+(-1+a^2)Y)<br>
+			++ If X-Yw = (1/(a^2+1) </blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Symmetry Rotation (θ degrees)</h4>
+		<div id="rota" class="section scrollspy">
+			<img src="./faculty11.png" >
+			<p>	<blockquote>BEFORE : Total=mp+X-Yw<br>
+			AFTER : Total=mp+(Xcos(θ)-Ysin(θ))-(Xsin(θ)+Ycos(θ))w<br>
+			-> [HOW?] The formula of rotation/transformation to solve this : (X,Y) -> ((Xcos(θ)-Ysin(θ))
+,(Xsin(θ)+Ycos(θ)))<br><b>++ If X-Yw = (Xcos(θ)-Ysin(θ))-(Xsin(θ)+Ycos(θ))w</b> </blockquote> </p>
+		</div>
+		<div class="divider"></div>
+		<h2 id="conclusion" class="section scrollspy">Conclusion & Evaluation</h2>
+		<div class="divider"></div>
+		<h4 class="section scrollspy">Conclusion</h4>
+		<div id="conc" class="section scrollspy">
+			<h5><blockquote style="border-left: 8px solid #42a5f5;">Original Total = mp+X-Yw (Total Before Transformation)</blockquote></h5>
+			<p><blockquote>For the conclusion of part one investigaion, please visit the small conclusion section that is located at the end of part one.
+			The table under is the organized results of the investigaion of part two that was the conditions of unchanged total after the transformations.</blockquote></p>
+			<table class="highlight centered" style="margin:0 auto;">
+			 <thead>
+				 <tr>
+						 <th data-field="type" style="width:200px">Transformation</th>
+						 <th data-field="totalafter" style="width:200px">Total After Transformation</th>
+						 <th data-field="condition" style="width:200px">The Condition of Unchanged Total</th>
+				 </tr>
+			 </thead>
+			 <tbody>
+				 <!-- conclusion table -->
+				 <tr>
+					 <td>x-axis Symmetry / Reflection</td>
+					 <td>mp+X+Yw</td>
+					 <td>-Yw = Yw , Y = 0</td>
+				 </tr>
+				 <tr>
+					 <td>y-axis Symmetry / Reflection</td>
+					 <td>mp-X-Yw</td>
+					 <td>X = -X , X = 0</td>
+				 </tr>
+				 <tr>
+					 <td>origin Symmetry / Reflection</td>
+					 <td>mp-X+Yw</td>
+					 <td>X-Yw = -X+Yw</td>
+				 </tr>
+				 <tr>
+					 <td>y=x Symmetry / Reflection</td>
+					 <td>mp-Y-Xw</td>
+					 <td>X-Yw = Y-Xw</td>
+				 </tr>
+				 <tr>
+					 <td>y=-x Symmetry / Reflection</td>
+					 <td>mp-Y+Xw</td>
+					 <td>X-Yw = Y+Xw</td>
+				 </tr>
+				 <tr>
+					 <td>Similarity in Ration of i : k </td>
+					 <td>mp+kX-kYw</td>
+					 <td>X-Yw = kX-kYw</td>
+				 </tr>
+				 <tr>
+					 <td>Rotation in 90 degrees</td>
+					 <td>mp-Y-Xw</td>
+					 <td>X-Yw = -Y-Xw</td>
+				 </tr>
+				 <tr>
+					 <td>y=ax Symmetry / Reflection</td>
+					 <td>mp+(1/(a^2+1)){(1-a^2)*X+(2aY)}-(1/(a^2+1))(2aX+(-1+a^2)Y)</td>
+					 <td>X-Yw = (1/(a^2+1)</td>
+				 </tr>
+				 <tr>
+					 <td>Rotation in θ degrees</td>
+					 <td>mp+(Xcos(θ)-Ysin(θ))-(Xsin(θ)+Ycos(θ))w</td>
+					 <td>X-Yw = (Xcos(θ)-Ysin(θ))-(Xsin(θ)+Ycos(θ))w</td>
+				 </tr>
+			 </tbody>
+		 </table>
+		</div>
+		<h4 class="section scrollspy">Evaluation</h4>
+		<div id="eval" class="section scrollspy">
+			<p>	<blockquote style="border-left:6px solid black;">This project had been absolutely fantastic. This project provided me an opportunity to learn more JavaScript and beautifully design the website by using css and jquery. Moreover, it reinvigorated my mathematical thinking and broad choice of investigation encouraged me to do more and aim higher. Solving mathematical problems throughout the whole project was another fun. However, My poor time managing skills give a hard time to me, because, mathematical part did not went according to the plan, hence, this week / project was very challenging for me.
+Even though I was panic at the last days of faculty project week, because of the previous knowledge of jquery and javascript truely helped me to finish my project on time. If I was given more time to spend on this project, I would have worked on more functions that will make my website more innovative and beautiful, additionally, I will explor more different methods of transformations.
+Lastly, one thing special about this project was, this project was all made by myself, in other words, there is nothing to acknwoledge in bibliography session except the fact like, 'use of jquery', 'javascript','nodejs for hosting'. The diagrams in part two were drawn in adobe illustrator by myself. In general, I personally enjoyed this project, was a good time to learn and improve my time managing skills. </blockquote> </p>
+		</div>
+	</div>
+	<!--https://docs.google.com/document/d/1cYy026tfteNO7LgXtguO7-1YZC-AxYio8OKM6hHDQbg/edit?usp=sharing-->
+	<div class="col hide-on-small-only 3 offset-s9 fixed">
+		<ul class="section table-of-contents">
+			<li><a href="#introduction" class="theme" style="color:#ffca28;">Introduction</a></li>
+			<li><a href="#introductaryParagraph">Introductary Paragraph</a></li>
+			<li><a href="#partone" class="theme" style="color:#ffca28;">Part One</a></li>
+			<li><a href="#bstt">Bar Sprites</a></li>
+			<li><a href="#cstt">Cross Sprites</a></li>
+			<li><a href="#rcstt">Rotated-Cross Sprites</a></li>
+			<li><a href="#poconc">Small Conclusion</a></li>
+			<li><a href="#parttwo" class="theme" style="color:#ffca28">Part Two</a></li>
+			<li><a href="#inex">Introductary Paragraph for Extension</a></li>
+			<li><a href="#xaxis">Symmetry/Reflection (x-axis)</a></li>
+			<li><a href="#yaxis">Symmetry/Reflection (y-axis)</a></li>
+			<li><a href="#org">Symmetry (origin)</a></li>
+			<li><a href="#yx">Symmetry/Reflection (y=x)</a></li>
+			<li><a href="#xy">Symmetry/Reflection (y=-x)</a></li>
+			<li><a href="#similarity">Similarity Transformation</a></li>
+			<li><a href="#90rot">Rotation (90 degrees)</a></li>
+			<li><a href="#loman">Symmetry/Reflection (y=ax)</a></li>
+			<li><a href="#rota">Rotation (a degrees / unknown degrees)</a></li>
+			<li><a href="#conclusion" class="theme" style="color:#ffca28">Conclusion</a></li>
+			<li><a href="#conc">Conclusion</a></li>
+			<li><a href="#eval">Evaluation</a></li>
+			<li><a href="#others" class="theme" style="color:#ffca28">Others</a></li>
+		</ul>
+	</div>
+</div>
+<script>
+var bstrow = 10;
+var bstcol = 10;
+// initializations ( below ):
+$(document).ready(function(){
+	$('.scrollspy').scrollSpy();
+});
+$(".button-collapse").sideNav({
+	menuWidth : 280
+});
+$(document).ready(function(){
+	$('.slider').slider({full_width: true});
+});
+$('#select').material_select();
+$("#search").keypress(function(event) {
+	if(event.which == 13) {
+		$('html, body').animate({ scrollTop: $('#'+$('#search').val()).offset().top }, 'slow');
+		$('#search').val("");
+	}
+});
+$("#bstRangeRow").change(function(){
+	bstrow = $('#bstRangeRow').val();
+	$table.attr('id','barSpriteTable');
+	$thead = $('<thead>');
+	$tbody = $('<tbody>');
+	for(var i = 0; i < bstrow; ++i) {
+		$tr = $('<tr>');
+		for(var j = 0; j < bstcol; ++j) {
+			$td = $('<td>');
+			$td.attr('id','barSprite_'+i+'_'+j);
+			$tr.append($td);
+			$td.html(i*10+j+1);
+		}
+		$tbody.append($tr);
+	}
+	$table.append($thead);
+	$table.append($tbody);
+});
+$("#bstRangeCol").change(function(){
+	bstcol = $('#bstRangeCol').val();
+	$table.attr('id','barSpriteTable');
+	$thead = $('<thead>');
+	$tbody = $('<tbody>');
+	for(var i = 0; i < bstrow; ++i) {
+	$tr = $('<tr>');
+	for(var j = 0; j < bstcol; ++j) {
+		$td = $('<td>');
+		$td.attr('id','barSprite_'+i+'_'+j);
+		$tr.append($td);
+		$td.html(i*10+j+1);
+	}
+	$tbody.append($tr);
+	}
+	$table.append($thead);
+	$table.append($tbody);
+});
+//table-of-contents settings
+$(window).scroll(function(){
+$(".fixed > ul").css("top", Math.max(0, 450 - $(this).scrollTop()))
+});
+
+// Bar Sprites
+// 10 by 10 grid making code ( below ):
+$table = $('<table>');
+$table.attr('id','barSpriteTable');
+$thead = $('<thead>');
+$tbody = $('<tbody>');
+for(var i = 0; i < bstrow; ++i) {
+	$tr = $('<tr>');
+	for(var j = 0; j < bstcol; ++j) {
+		$td = $('<td>');
+		$td.attr('id','barSprite_'+i+'_'+j);
+		$tr.append($td);
+		$td.html(i*10+j+1);
+	}
+	$tbody.append($tr);
+}
+$table.append($thead);
+$table.append($tbody);
+$('#bst').append($table);
+// Getting ID of 10 by 10 grid above (below):
+$('#barSpriteTable td').mouseover(function() {
+	var barSpriteId = $(this).attr('id');
+	var barSpriteName = barSpriteId.split('_')[0];
+	var barSpriteRow = parseInt(barSpriteId.split('_')[1]);
+	var barSpriteCol = barSpriteId.split('_')[2];
+	if(barSpriteRow != 0 && barSpriteRow != 9) {
+		$('#'+barSpriteName+'_'+(barSpriteRow+1)+'_'+barSpriteCol).css('background-color', '#42a5f5');
+		$('#'+barSpriteName+'_'+barSpriteRow+'_'+barSpriteCol).css('background-color', '#ef5350');
+		$('#'+barSpriteName+'_'+(barSpriteRow-1)+'_'+barSpriteCol).css('background-color', '#42a5f5');
+	}
+	else {
+		$('#'+barSpriteName+'_'+barSpriteRow+'_'+barSpriteCol).css('background-color', '#bdbdbd');
+	}
+});
+//Clearing up the table
+$('#barSpriteTable td').mouseleave(function() {
+	var barSpriteId = $(this).attr('id');
+	var barSpriteName = barSpriteId.split('_')[0];
+	var barSpriteRow = parseInt(barSpriteId.split('_')[1]);
+	var barSpriteCol = barSpriteId.split('_')[2];
+	$('#'+barSpriteName+'_'+(barSpriteRow+1)+'_'+barSpriteCol).css('background-color', 'white');
+	$('#'+barSpriteName+'_'+barSpriteRow+'_'+barSpriteCol).css('background-color', 'white');
+	$('#'+barSpriteName+'_'+(barSpriteRow-1)+'_'+barSpriteCol).css('background-color', 'white');
+});
+// End of Bar Sprites
+// 10 by 10 grid making code ( below ) (Cross Sprites):
+$table = $('<table>');
+$table.attr('id','crossSpriteTable');
+$thead = $('<thead>');
+$tbody = $('<tbody>');
+for(var i = 0; i < 10; ++i) {
+	$tr = $('<tr>');
+	for(var j = 0; j < 10; ++j) {
+		$td = $('<td>');
+		$td.attr('id','crossSprite_'+i+'_'+j);
+		$tr.append($td);
+		$td.html(i*10+j+1);
+	}
+	$tbody.append($tr);
+}
+$table.append($thead);
+$table.append($tbody);
+$('#cst').append($table);
+// Getting ID of 10 by 10 grid above (below):
+$('#crossSpriteTable td').mouseover(function() {
+	var crossSpriteId = $(this).attr('id');
+	var crossSpriteName = crossSpriteId.split('_')[0];
+	var crossSpriteRow = parseInt(crossSpriteId.split('_')[1]);
+	var crossSpriteCol = parseInt(crossSpriteId.split('_')[2]);
+	if(crossSpriteRow != 0 && crossSpriteRow != 9 && crossSpriteCol != 0 && crossSpriteCol != 9) {
+		$('#'+crossSpriteName+'_'+(crossSpriteRow+1)+'_'+crossSpriteCol).css('background-color', '#42a5f5');
+		$('#'+crossSpriteName+'_'+crossSpriteRow+'_'+crossSpriteCol).css('background-color', '#ef5350');
+		$('#'+crossSpriteName+'_'+(crossSpriteRow-1)+'_'+crossSpriteCol).css('background-color', '#42a5f5');
+		$('#'+crossSpriteName+'_'+crossSpriteRow+'_'+(crossSpriteCol+1)).css('background-color', '#42a5f5');
+		$('#'+crossSpriteName+'_'+crossSpriteRow+'_'+(+crossSpriteCol-1)).css('background-color', '#42a5f5');
+	}
+	else {
+		$('#'+crossSpriteName+'_'+crossSpriteRow+'_'+crossSpriteCol).css('background-color', '#bdbdbd');
+	}
+});
+$('#crossSpriteTable td').mouseleave(function() {
+	var crossSpriteId = $(this).attr('id');
+	var crossSpriteName = crossSpriteId.split('_')[0];
+	var crossSpriteRow = parseInt(crossSpriteId.split('_')[1]);
+	var crossSpriteCol = parseInt(crossSpriteId.split('_')[2]);
+	$('#'+crossSpriteName+'_'+(crossSpriteRow+1)+'_'+crossSpriteCol).css('background-color', 'white');
+	$('#'+crossSpriteName+'_'+crossSpriteRow+'_'+crossSpriteCol).css('background-color', 'white');
+	$('#'+crossSpriteName+'_'+(crossSpriteRow-1)+'_'+crossSpriteCol).css('background-color', 'white');
+	$('#'+crossSpriteName+'_'+crossSpriteRow+'_'+(crossSpriteCol-1)).css('background-color', 'white');
+	$('#'+crossSpriteName+'_'+crossSpriteRow+'_'+(crossSpriteCol+1)).css('background-color', 'white');
+});
+$table = $('<table>');
+$table.attr('id','rcrossSpriteTable');
+$thead = $('<thead>');
+$tbody = $('<tbody>');
+for(var i = 0; i < 10; ++i) {
+	$tr = $('<tr>');
+	for(var j = 0; j < 10; ++j) {
+		$td = $('<td>');
+		$td.attr('id','rcrossSprite_'+i+'_'+j);
+		$tr.append($td);
+		$td.html(i*10+j+1);
+	}
+	$tbody.append($tr);
+}
+$table.append($thead);
+$table.append($tbody);
+$('#rcst').append($table);
+// Getting ID of 10 by 10 grid above (below):
+$('#rcrossSpriteTable td').mouseover(function() {
+	var rcrossSpriteId = $(this).attr('id');
+	var rcrossSpriteName = rcrossSpriteId.split('_')[0];
+	var rcrossSpriteRow = parseInt(rcrossSpriteId.split('_')[1]);
+	var rcrossSpriteCol = parseInt(rcrossSpriteId.split('_')[2]);
+	if(rcrossSpriteRow != 0 && rcrossSpriteRow != 9 && rcrossSpriteCol != 0 && rcrossSpriteCol != 9) {
+		$('#'+rcrossSpriteName+'_'+(rcrossSpriteRow+1)+'_'+(rcrossSpriteCol+1)).css('background-color', '#42a5f5');
+		$('#'+rcrossSpriteName+'_'+rcrossSpriteRow+'_'+rcrossSpriteCol).css('background-color', '#ef5350');
+		$('#'+rcrossSpriteName+'_'+(rcrossSpriteRow-1)+'_'+(rcrossSpriteCol+1)).css('background-color', '#42a5f5');
+		$('#'+rcrossSpriteName+'_'+(rcrossSpriteRow-1)+'_'+(rcrossSpriteCol-1)).css('background-color', '#42a5f5');
+		$('#'+rcrossSpriteName+'_'+(rcrossSpriteRow+1)+'_'+(+rcrossSpriteCol-1)).css('background-color', '#42a5f5');
+	}
+	else {
+		$('#'+rcrossSpriteName+'_'+rcrossSpriteRow+'_'+rcrossSpriteCol).css('background-color', '#bdbdbd');
+	}
+});
+$('#rcrossSpriteTable td').mouseleave(function() {
+	var rcrossSpriteId = $(this).attr('id');
+	var rcrossSpriteName = rcrossSpriteId.split('_')[0];
+	var rcrossSpriteRow = parseInt(rcrossSpriteId.split('_')[1]);
+	var rcrossSpriteCol = parseInt(rcrossSpriteId.split('_')[2]);
+	$('#'+rcrossSpriteName+'_'+(rcrossSpriteRow+1)+'_'+(rcrossSpriteCol+1)).css('background-color', 'white');
+	$('#'+rcrossSpriteName+'_'+rcrossSpriteRow+'_'+rcrossSpriteCol).css('background-color', 'white');
+	$('#'+rcrossSpriteName+'_'+(rcrossSpriteRow-1)+'_'+(rcrossSpriteCol+1)).css('background-color', 'white');
+	$('#'+rcrossSpriteName+'_'+(rcrossSpriteRow-1)+'_'+(rcrossSpriteCol-1)).css('background-color', 'white');
+	$('#'+rcrossSpriteName+'_'+(rcrossSpriteRow+1)+'_'+(+rcrossSpriteCol-1)).css('background-color', 'white');
+});
+</script>
+</body>
+</html>
