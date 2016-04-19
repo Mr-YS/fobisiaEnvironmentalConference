@@ -14,9 +14,6 @@ td {
 	width: 60px;
 	height: 60px;
 }
-.slider .indicators .indicator-item.active {
-	background-color: #42a5f5;
-}
 
 .table-of-contents a.active {
 	border-left: 4px solid #42a5f5;
