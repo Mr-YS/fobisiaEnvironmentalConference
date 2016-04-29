@@ -5,20 +5,20 @@
 	margin : 0 auto;
 }
 p {
-	font-size:14px;
+	font-size:15px;
 	color:#757575;
 }
 
 h4, h3 {
-	color:#212121;
+	color:#42a5f5;
 }
 
 h2 {
-	color:#42a5f5;
+	color:#29b6f6;
 }
 .slider .indicators .indicator-item.active {
 	background-color: #42a5f5;
 }
 blockquote {
-	border-left: 6px solid #ffca28;
+	border-left: 9px solid #29b6f6;
 }
