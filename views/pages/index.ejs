@@ -51,33 +51,33 @@
 		</ul>
 	</div>
 	<ul id="dropdown1" class="dropdown-content">
-  		<li><a href="#!" style="height:64px">Introduction</a></li>
+  		<li><a href="#introduction" style="height:64px">Introduction</a></li>
  	 	<li class="divider"></li>
-  		<li><a href="#!" style="height:64px">Schedule</a></li>
+  		<li><a href="#intschedule" style="height:64px">Schedule</a></li>
 	</ul>
 	<ul id="dropdown2" class="dropdown-content">
-  		<li><a href="#!" style="height:64px">Booklet</a></li>	
-  		<li><a href="#!" style="height:64px">Worksheet</a></li>
+  		<li><a href="#booklet" style="height:64px">Booklet</a></li>	
+  		<li><a href="#worksheet" style="height:64px">Worksheet</a></li>
  	 	<li class="divider"></li>
-  		<li><a href="#!" style="height:64px">Sources</a></li>
+  		<li><a href="#sources" style="height:64px">Sources</a></li>
 	</ul>
 	<ul id="dropdown3" class="dropdown-content">
-  		<li><a href="#!" style="height:64px">Corals</a></li>	
-  		<li><a href="#!" style="height:64px">Mangroves</a></li>
-  		<li><a href="#!" style="height:64px">Overfishing</a></li>
-  		<li><a href="#!" style="height:64px">Plastic Pollution</a></li>
+  		<li><a href="#corals" style="height:64px">Corals</a></li>	
+  		<li><a href="#mangroves" style="height:64px">Mangroves</a></li>
+  		<li><a href="#overfishing" style="height:64px">Overfishing</a></li>
+  		<li><a href="#plasticpollution" style="height:64px">Plastic Pollution</a></li>
  	 	<li class="divider"></li>
-  		<li><a href="#!" style="height:64px">Video</a></li>
+  		<li><a href="#video" style="height:64px">Video</a></li>
 	</ul>
 	<ul id="dropdown4" class="dropdown-content">
-  		<li><a href="#!" style="height:64px">Schedule</a></li>	
-  		<li><a href="#!" style="height:64px">Materials</a></li>
+  		<li><a href="#quariumschedule" style="height:64px">Schedule</a></li>	
+  		<li><a href="#materials" style="height:64px">Materials</a></li>
 	</ul>	
 	<ul id="dropdown5" class="dropdown-content">
-  		<li><a href="#!" style="height:64px">Interviews</a></li>	
- 	 	<li class="divider"></li>
-  		<li><a href="#!" style="height:64px">Suggestion</a></li>
-  		<li><a href="#!" style="height:64px">Further Info.</a></li>
+  		<li><a href="#interview" style="height:64px">Interviews</a></li>	
+ 	 	<li class="divider"></i>
+  		<li><a href="#suggestion" style="height:64px">Suggestion</a></li>
+  		<li><a href="#" style="height:64px">Further Info.</a></li>
 	</ul>
 	<nav style="position:fixed;width:calc(100%-240px);">
   		<div class="nav-wrapper blue lighten-1 fixed" style="text-align:center;">
@@ -93,7 +93,7 @@
 	<div style="background-color:white;height:30px;"></div>
 	<div class="col s11 offset-s1">
 		<div class="divider" style="background-color:white;height:100px;"></div>
-		<div>
+		<div id="introduction">
 			<h2 class="blue-text text-lighten-1"><blockquote>Introduction</blockquote></h2>
 			<p><blockquote style="border-left:6px solid #00bcd4;">Welcome to the <b>FOBISIA Environmental Conference 2016!</b> We are delighted to host this conference at NLCS Jeju on our unique island and enable you to experience first hand its unique marine ecology. We live in an industrial age where the threats to our marine ecosystems are many and varied. From global warming to mangrove destruction, plastic pollution to overfishing, our ocean environments are suffering from the effects of the actions of humankind. It is our intention, over the three dayys of this conference, to enable you to immerse yourselves in some of these problems. Some of you will hopefully be the global decision makers of the future and we hope to ignite and nurture a spark of environmental awareness that will enable you to make the right decisions and help safeguard the future of our seas. </br></br>
 <b>John Witton BSc MRSB</b></br>
@@ -102,7 +102,7 @@
 			</blockquote></p>
 		</div>
 		<div class="divider"></div>
-		<div>
+		<div id="intschedule">
 			<h2 class="blue-text text-lighten-1"><blockquote>Schedule</blockquote></h2>
 			<ul class="collapsible popout z-depth-5" data-collapsible="accordion">
 			<li>
@@ -325,6 +325,24 @@
 		</ul>
 		</div>
 		<div>
+			<h2 class="green-text text-lighten-1"><blockquote style="left-border:6px solid #66bb6a;">Mahoma Island</blockquote></h2>
+			<div id="corals">
+				<h3 style="color:black;"><blockquote style="left-border:4px solid black;">Corals</blockquote></h3>
+				<object data="coralsummary.pdf" style="width:100%;height:700px;"></object>
+			</div>
+			<div id="mangroves">
+				
+				<h3 style="color:black;"><blockquote style="left-border:4px solid black;">Mangroves</blockquote></h3>
+				<object data="mangsummary.pdf" style="width:100%;height:700px;"></object>
+			</div>
+			<div id="overfishing">
+				<h3 style="color:black;"><blockquote style="left-border:4px solid black;">Overfishing</blockquote></h3>
+				<object data="overfishingsummary.pdf" style="width:100%;height:700px;"></object>
+			</div>
+			<div id="plasticpollution">
+				<h3 style="color:black;"><blockquote style="left-border:4px solid black;">Plastic Pollution</blockquote></h3>
+				<object data="plasticsummary.pdf" style="width:100%;height:700px;"></object>
+			</div>
 		</div>
 	</div>
 	</div>
@@ -341,6 +359,10 @@ $(document).ready(function(){
 });
 $(".button-collapse").sideNav();
 $('#select').material_select();
+
+window.onload = function(){
+	 Materialize.toast('VIEW THIS WEBSITE IN CHROME! / FULL SCREEN REQUIRED', 8000)
+}
 </script>
 </body>
 </html>
