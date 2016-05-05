@@ -1,0 +1,22 @@
+</div>
+<script>
+// initializations ( below ):
+$(window).scroll(function(){
+	$("nav").css("top", Math.max(0, 450 - $(this).scrollTop()))
+});
+$(document).ready(function(){
+	$('.scrollspy').scrollSpy();
+});
+$(document).ready(function(){
+	$('.slider').slider({full_width: true});
+});
+$(".button-collapse").sideNav();
+$('#select').material_select();
+
+window.onload = function(){
+	 Materialize.toast('VIEW THIS WEBSITE IN CHROME! / FULL SCREEN REQUIRED', 8000)
+}
+</script>
+</body>
+</html>
+

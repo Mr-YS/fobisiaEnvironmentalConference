@@ -8,4 +8,8 @@ router.get('/',function(req,res) {
 	res.render('pages/index');
 });
 
+router.get('/coral',function(req,res) {
+	res.render('pages/coral');
+});
+
 module.exports = router;
